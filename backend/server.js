@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
-const connectDB = require("./config/db");
+const connectDB = require("./Config/db");
 
 dotenv.config();
 
@@ -13,11 +13,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const authRoutes = require("./routes/authRoutes");
+const authRoutes = require("./Routes/authRoutes");
 
 app.use("/api/auth", authRoutes);
 
-const memberRoutes = require("./routes/memberRoutes");
+const memberRoutes = require("./Routes/memberRoutes");
 
 app.use("/api/members", memberRoutes);
 
