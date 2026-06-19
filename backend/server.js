@@ -17,6 +17,10 @@ const authRoutes = require("./routes/authRoutes");
 
 app.use("/api/auth", authRoutes);
 
+const memberRoutes = require("./routes/memberRoutes");
+
+app.use("/api/members", memberRoutes);
+
 app.get("/", (req, res) => {
   res.send("Gym API Running");
 });
