@@ -28,12 +28,12 @@ const Hero = () => {
             Join Now
           </Link>
 
-          <Link
-            to="#plans"
+          <a
+            href="#plans"
             className="border border-white px-6 py-3 rounded-lg text-white"
           >
             View Plans
-          </Link>
+          </a>
         </div>
       </div>
     </section>
