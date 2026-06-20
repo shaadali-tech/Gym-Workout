@@ -29,7 +29,7 @@ const Hero = () => {
           </Link>
 
           <a
-            href="#plains"
+            href="#plans"
             className="border border-white px-6 py-3 rounded-lg text-white"
           >
             View Plans
