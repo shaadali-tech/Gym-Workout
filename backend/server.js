@@ -21,6 +21,9 @@ const memberRoutes = require("./Routes/memberRoutes");
 
 app.use("/api/members", memberRoutes);
 
+const contactRoutes = require("./routes/contactRoutes");
+
+app.use("/api/contact", contactRoutes);
 app.get("/", (req, res) => {
   res.send("Gym API Running");
 });

@@ -2,7 +2,7 @@ import gymInterior from "../assets/gym3.webp";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-gray-100" id="about">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

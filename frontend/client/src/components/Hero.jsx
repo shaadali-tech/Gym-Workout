@@ -2,7 +2,8 @@ import heroImage from "../assets/gym2.webp";
 const Hero = () => {
   return (
     <section
-      className="h-screen bg-cover bg-center relative"
+      id="home"
+      className="h-screen pt-20 bg-cover bg-center relative"
       style={{
         backgroundImage: `url(${heroImage})`,
       }}
