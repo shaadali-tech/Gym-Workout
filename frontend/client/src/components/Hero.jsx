@@ -27,8 +27,7 @@ const Hero = () => {
           >
             Join Now
           </Link>
-
-          
+        </div>
       </div>
     </section>
   );
