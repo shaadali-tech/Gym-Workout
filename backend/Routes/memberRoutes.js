@@ -11,7 +11,7 @@ const {
   updateMember,
   deleteMember,
   recentMembers,
-} = require("../Controller/memberController");
+} = require("../Controller/membercontroller");
 router.get("/", protect, getMembers);
 router.get("/recent", protect, recentMembers);
 router.get("/:id", protect, getMember);

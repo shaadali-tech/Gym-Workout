@@ -21,7 +21,7 @@ const memberRoutes = require("./Routes/memberRoutes");
 
 app.use("/api/members", memberRoutes);
 
-const contactRoutes = require("./routes/contactRoutes");
+const contactRoutes = require("./Routes/contactRoutes");
 
 app.use("/api/contact", contactRoutes);
 app.get("/", (req, res) => {
