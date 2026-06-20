@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../assets/gym2.webp";
 const Hero = () => {
   return (
@@ -20,13 +21,19 @@ const Hero = () => {
             Join the best fitness community and achieve your dream physique.
           </p>
 
-          <button className="bg-red-600 px-8 py-4 rounded-lg mr-4">
+          <Link
+            to="/register"
+            className="bg-red-500 px-6 py-3 rounded-lg text-white"
+          >
             Join Now
-          </button>
+          </Link>
 
-          <button className="border border-white px-8 py-4 rounded-lg">
+          <Link
+            to="/plans"
+            className="border border-white px-6 py-3 rounded-lg text-white"
+          >
             View Plans
-          </button>
+          </Link>
         </div>
       </div>
     </section>
