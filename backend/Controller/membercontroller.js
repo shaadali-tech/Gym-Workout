@@ -72,10 +72,23 @@ const deleteMember = async (req, res) => {
     });
   }
 };
+
+const recentMembers = async (req, res) => {
+  try {
+    const members = await Member.find().sort({ createdAt: -1 }).limit(5);
+
+    res.status(200).json(members);
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+};
 module.exports = {
   addMember,
   getMembers,
   getMember,
   updateMember,
+  recentMembers,
   deleteMember,
 };

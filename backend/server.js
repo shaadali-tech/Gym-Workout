@@ -27,7 +27,9 @@ app.use("/api/contact", contactRoutes);
 app.get("/", (req, res) => {
   res.send("Gym API Running");
 });
+const dashboardRoutes = require("./Routes/dashboardRoutes");
 
+app.use("/api/dashboard", dashboardRoutes);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
