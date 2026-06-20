@@ -28,12 +28,16 @@ const Hero = () => {
             Join Now
           </Link>
 
-          <a
-            href="#plans"
+          <button
+            onClick={() => {
+              document.getElementById("plans")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
             className="border border-white px-6 py-3 rounded-lg text-white"
           >
             View Plans
-          </a>
+          </button>
         </div>
       </div>
     </section>
