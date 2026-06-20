@@ -28,18 +28,7 @@ const Hero = () => {
             Join Now
           </Link>
 
-          <button
-            type="button"
-            onClick={() => {
-              document.getElementById("plans")?.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-            className="border border-white px-6 py-3 rounded-lg text-white"
-          >
-            View Membership Plans
-          </button>
-        </div>
+          
       </div>
     </section>
   );
