@@ -29,6 +29,7 @@ const Hero = () => {
           </Link>
 
           <button
+            type="button"
             onClick={() => {
               document.getElementById("plans")?.scrollIntoView({
                 behavior: "smooth",
@@ -36,7 +37,7 @@ const Hero = () => {
             }}
             className="border border-white px-6 py-3 rounded-lg text-white"
           >
-            View Plans
+            View Membership Plans
           </button>
         </div>
       </div>
